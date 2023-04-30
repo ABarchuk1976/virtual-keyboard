@@ -1,5 +1,9 @@
 export const markup = `
     <section class="app">
+			<h1 class="app__title">
+				<span class="ru">Виртуальная клавиатура</span>
+				<span class="en hidden">Virtual keyboard</span>
+			</h1>
       <textarea
         name="monitor"
         id="monitor"
@@ -915,5 +919,9 @@ export const markup = `
           </button>
         </li>
       </ul>
+			<p class="app__description">
+				<span class="ru">Клавиатура создана в Windows ОС. Для переключения языков - сочетание клавиш Win + Пробел.</span>
+				<span class="en hidden">Keyboard created at Windows OS. Switch language by Win + Space keys.</span>
+			</p>
     </section>
 `;
