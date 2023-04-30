@@ -23,8 +23,8 @@ export const markup = `
             <span class="en hidden">
               <span class="unshift visible">&#x60;</span>
               <span class="shift hidden">~</span>
-              <span class="shiftCaps hidden">&#x60;</span>
-              <span class="unshiftCaps hidden">~</span>
+              <span class="shiftCaps hidden">~</span>
+              <span class="unshiftCaps hidden">&#x60;</span>
             </span>
           </button>
           <button type="button" class="keyboard__key Digit1">
@@ -229,148 +229,148 @@ export const markup = `
             <span class="ru">
               <span class="unshift visible">й</span>
               <span class="shift hidden">Й</span>
-              <span class="shiftCaps hidden">Й</span>
-              <span class="unshiftCaps hidden">й</span>
+              <span class="shiftCaps hidden">й</span>
+              <span class="unshiftCaps hidden">Й</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">q</span>
               <span class="shift hidden">Q</span>
-              <span class="shiftCaps hidden">Q</span>
-              <span class="unshiftCaps hidden">q</span>
+              <span class="shiftCaps hidden">q</span>
+              <span class="unshiftCaps hidden">Q</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyW">
             <span class="ru">
               <span class="unshift visible">ц</span>
               <span class="shift hidden">Ц</span>
-              <span class="shiftCaps hidden">Ц</span>
-              <span class="unshiftCaps hidden">ц</span>
+              <span class="unshiftCaps hidden">Ц</span>
+              <span class="shiftCaps hidden">ц</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">w</span>
               <span class="shift hidden">W</span>
-              <span class="shiftCaps hidden">W</span>
-              <span class="unshiftCaps hidden">w</span>
+              <span class="unshiftCaps hidden">W</span>
+              <span class="shiftCaps hidden">w</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyE">
             <span class="ru">
               <span class="unshift visible">у</span>
               <span class="shift hidden">У</span>
-              <span class="shiftCaps hidden">У</span>
-              <span class="unshiftCaps hidden">у</span>
+              <span class="unshiftCaps hidden">У</span>
+              <span class="shiftCaps hidden">у</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">e</span>
               <span class="shift hidden">E</span>
-              <span class="shiftCaps hidden">E</span>
-              <span class="unshiftCaps hidden">e</span>
+              <span class="unshiftCaps hidden">E</span>
+              <span class="shiftCaps hidden">e</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyR">
             <span class="ru">
               <span class="unshift visible">к</span>
               <span class="shift hidden">К</span>
-              <span class="shiftCaps hidden">К</span>
-              <span class="unshiftCaps hidden">к</span>
+              <span class="unshiftCaps hidden">К</span>
+              <span class="shiftCaps hidden">к</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">r</span>
               <span class="shift hidden">R</span>
-              <span class="shiftCaps hidden">R</span>
-              <span class="unshiftCaps hidden">r</span>
+              <span class="unshiftCaps hidden">R</span>
+              <span class="shiftCaps hidden">r</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyT">
             <span class="ru">
               <span class="unshift visible">е</span>
               <span class="shift hidden">Е</span>
-              <span class="shiftCaps hidden">Е</span>
-              <span class="unshiftCaps hidden">е</span>
+              <span class="unshiftCaps hidden">Е</span>
+              <span class="shiftCaps hidden">е</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">t</span>
               <span class="shift hidden">T</span>
-              <span class="shiftCaps hidden">T</span>
-              <span class="unshiftCaps hidden">t</span>
+              <span class="unshiftCaps hidden">T</span>
+              <span class="shiftCaps hidden">t</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyY">
             <span class="ru">
               <span class="unshift visible">н</span>
               <span class="shift hidden">Н</span>
-              <span class="shiftCaps hidden">Н</span>
-              <span class="unshiftCaps hidden">н</span>
+              <span class="unshiftCaps hidden">Н</span>
+              <span class="shiftCaps hidden">н</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">y</span>
               <span class="shift hidden">Y</span>
-              <span class="shiftCaps hidden">Y</span>
-              <span class="unshiftCaps hidden">y</span>
+              <span class="unshiftCaps hidden">Y</span>
+              <span class="shiftCaps hidden">y</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyU">
             <span class="ru">
               <span class="unshift visible">г</span>
               <span class="shift hidden">Г</span>
-              <span class="shiftCaps hidden">Г</span>
-              <span class="unshiftCaps hidden">г</span>
+              <span class="unshiftCaps hidden">Г</span>
+              <span class="shiftCaps hidden">г</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">u</span>
               <span class="shift hidden">U</span>
-              <span class="shiftCaps hidden">U</span>
-              <span class="unshiftCaps hidden">u</span>
+              <span class="unshiftCaps hidden">U</span>
+              <span class="shiftCaps hidden">u</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyI">
             <span class="ru">
               <span class="unshift visible">ш</span>
               <span class="shift hidden">Ш</span>
-              <span class="shiftCaps hidden">Ш</span>
-              <span class="unshiftCaps hidden">ш</span>
+              <span class="unshiftCaps hidden">Ш</span>
+              <span class="shiftCaps hidden">ш</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">i</span>
               <span class="shift hidden">I</span>
-              <span class="shiftCaps hidden">I</span>
-              <span class="unshiftCaps hidden">i</span>
+              <span class="unshiftCaps hidden">I</span>
+              <span class="shiftCaps hidden">i</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyO">
             <span class="ru">
               <span class="unshift visible">щ</span>
               <span class="shift hidden">Щ</span>
-              <span class="shiftCaps hidden">Щ</span>
-              <span class="unshiftCaps hidden">щ</span>
+              <span class="unshiftCaps hidden">Щ</span>
+              <span class="shiftCaps hidden">щ</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">o</span>
               <span class="shift hidden">O</span>
-              <span class="shiftCaps hidden">O</span>
-              <span class="unshiftCaps hidden">o</span>
+              <span class="unshiftCaps hidden">O</span>
+              <span class="shiftCaps hidden">o</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyP">
             <span class="ru">
               <span class="unshift visible">з</span>
               <span class="shift hidden">З</span>
-              <span class="shiftCaps hidden">З</span>
-              <span class="unshiftCaps hidden">з</span>
+              <span class="unshiftCaps hidden">З</span>
+              <span class="shiftCaps hidden">з</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">p</span>
               <span class="shift hidden">P</span>
-              <span class="shiftCaps hidden">P</span>
-              <span class="unshiftCaps hidden">p</span>
+              <span class="unshiftCaps hidden">P</span>
+              <span class="shiftCaps hidden">p</span>
             </span>
           </button>
           <button type="button" class="keyboard__key BracketLeft">
             <span class="ru">
               <span class="unshift visible">х</span>
               <span class="shift hidden">Х</span>
-              <span class="shiftCaps hidden">Х</span>
-              <span class="unshiftCaps hidden">х</span>
+              <span class="unshiftCaps hidden">Х</span>
+              <span class="shiftCaps hidden">х</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">[</span>
@@ -383,8 +383,8 @@ export const markup = `
             <span class="ru">
               <span class="unshift visible">ъ</span>
               <span class="shift hidden">Ъ</span>
-              <span class="shiftCaps hidden">Ъ</span>
-              <span class="unshiftCaps hidden">ъ</span>
+              <span class="unshiftCaps hidden">Ъ</span>
+              <span class="shiftCaps hidden">ъ</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">]</span>
@@ -440,149 +440,149 @@ export const markup = `
           <button type="button" class="keyboard__key KeyA">
             <span class="ru">
               <span class="unshift visible">ф</span>
-              <span class="shift hidden">ф</span>
+              <span class="shift hidden">Ф</span>
               <span class="shiftCaps hidden">ф</span>
-              <span class="unshiftCaps hidden">ф</span>
+              <span class="unshiftCaps hidden">Ф</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">a</span>
               <span class="shift hidden">A</span>
-              <span class="shiftCaps hidden">A</span>
-              <span class="unshiftCaps hidden">a</span>
+              <span class="shiftCaps hidden">a</span>
+              <span class="unshiftCaps hidden">A</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyS">
             <span class="ru">
               <span class="unshift visible">ы</span>
               <span class="shift hidden">Ы</span>
-              <span class="shiftCaps hidden">Ы</span>
-              <span class="unshiftCaps hidden">ы</span>
+              <span class="unshiftCaps hidden">Ы</span>
+              <span class="shiftCaps hidden">ы</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">s</span>
               <span class="shift hidden">S</span>
-              <span class="shiftCaps hidden">S</span>
-              <span class="unshiftCaps hidden">s</span>
+              <span class="unshiftCaps hidden">S</span>
+              <span class="shiftCaps hidden">s</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyD">
             <span class="ru">
               <span class="unshift visible">в</span>
               <span class="shift hidden">В</span>
-              <span class="shiftCaps hidden">В</span>
-              <span class="unshiftCaps hidden">в</span>
+              <span class="unshiftCaps hidden">В</span>
+              <span class="shiftCaps hidden">в</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">d</span>
               <span class="shift hidden">D</span>
-              <span class="shiftCaps hidden">D</span>
-              <span class="unshiftCaps hidden">d</span>
+              <span class="unshiftCaps hidden">D</span>
+              <span class="shiftCaps hidden">d</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyF">
             <span class="ru">
               <span class="unshift visible">а</span>
               <span class="shift hidden">А</span>
-              <span class="shiftCaps hidden">А</span>
-              <span class="unshiftCaps hidden">а</span>
+              <span class="unshiftCaps hidden">А</span>
+              <span class="shiftCaps hidden">а</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">f</span>
               <span class="shift hidden">F</span>
-              <span class="shiftCaps hidden">F</span>
-              <span class="unshiftCaps hidden">f</span>
+              <span class="unshiftCaps hidden">F</span>
+              <span class="shiftCaps hidden">f</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyG">
             <span class="ru">
               <span class="unshift visible">п</span>
               <span class="shift hidden">П</span>
-              <span class="shiftCaps hidden">П</span>
-              <span class="unshiftCaps hidden">п</span>
+              <span class="unshiftCaps hidden">П</span>
+              <span class="shiftCaps hidden">п</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">g</span>
               <span class="shift hidden">G</span>
-              <span class="shiftCaps hidden">G</span>
-              <span class="unshiftCaps hidden">g</span>
+              <span class="unshiftCaps hidden">G</span>
+              <span class="shiftCaps hidden">g</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyH">
             <span class="ru">
               <span class="unshift visible">р</span>
               <span class="shift hidden">Р</span>
-              <span class="shiftCaps hidden">Р</span>
-              <span class="unshiftCaps hidden">р</span>
+              <span class="unshiftCaps hidden">Р</span>
+              <span class="shiftCaps hidden">р</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">h</span>
               <span class="shift hidden">H</span>
-              <span class="shiftCaps hidden">H</span>
-              <span class="unshiftCaps hidden">h</span>
+              <span class="unshiftCaps hidden">H</span>
+              <span class="shiftCaps hidden">h</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyJ">
             <span class="ru">
               <span class="unshift visible">о</span>
               <span class="shift hidden">О</span>
-              <span class="shiftCaps hidden">О</span>
-              <span class="unshiftCaps hidden">о</span>
+              <span class="unshiftCaps hidden">О</span>
+              <span class="shiftCaps hidden">о</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">j</span>
               <span class="shift hidden">J</span>
-              <span class="shiftCaps hidden">J</span>
-              <span class="unshiftCaps hidden">j</span>
+              <span class="unshiftCaps hidden">J</span>
+              <span class="shiftCaps hidden">j</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyK">
             <span class="ru">
               <span class="unshift visible">л</span>
               <span class="shift hidden">Л</span>
-              <span class="shiftCaps hidden">Л</span>
-              <span class="unshiftCaps hidden">л</span>
+              <span class="unshiftCaps hidden">Л</span>
+              <span class="shiftCaps hidden">л</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">k</span>
               <span class="shift hidden">K</span>
-              <span class="shiftCaps hidden">K</span>
-              <span class="unshiftCaps hidden">k</span>
+              <span class="unshiftCaps hidden">K</span>
+              <span class="shiftCaps hidden">k</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyL">
             <span class="ru">
               <span class="unshift visible">д</span>
               <span class="shift hidden">Д</span>
-              <span class="shiftCaps hidden">Д</span>
-              <span class="unshiftCaps hidden">д</span>
+              <span class="unshiftCaps hidden">Д</span>
+              <span class="shiftCaps hidden">д</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">l</span>
               <span class="shift hidden">L</span>
-              <span class="shiftCaps hidden">L</span>
-              <span class="unshiftCaps hidden">l</span>
+              <span class="unshiftCaps hidden">L</span>
+              <span class="shiftCaps hidden">l</span>
             </span>
           </button>
           <button type="button" class="keyboard__key Semicolon">
             <span class="ru">
               <span class="unshift visible">ж</span>
               <span class="shift hidden">Ж</span>
-              <span class="shiftCaps hidden">Ж</span>
-              <span class="unshiftCaps hidden">ж</span>
+              <span class="unshiftCaps hidden">Ж</span>
+              <span class="shiftCaps hidden">ж</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">;</span>
               <span class="shift hidden">:</span>
-              <span class="shiftCaps hidden">:</span>
               <span class="unshiftCaps hidden">;</span>
+              <span class="shiftCaps hidden">:</span>
             </span>
           </button>
           <button type="button" class="keyboard__key Quote">
             <span class="ru">
               <span class="unshift visible">э</span>
               <span class="shift hidden">Э</span>
-              <span class="shiftCaps hidden">Э</span>
-              <span class="unshiftCaps hidden">э</span>
+              <span class="unshiftCaps hidden">Э</span>
+              <span class="shiftCaps hidden">э</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">'</span>
@@ -625,106 +625,106 @@ export const markup = `
             <span class="ru">
               <span class="unshift visible">я</span>
               <span class="shift hidden">Я</span>
-              <span class="shiftCaps hidden">Я</span>
-              <span class="unshiftCaps hidden">я</span>
+              <span class="unshiftCaps hidden">Я</span>
+              <span class="shiftCaps hidden">я</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">z</span>
               <span class="shift hidden">Z</span>
-              <span class="shiftCaps hidden">Z</span>
-              <span class="unshiftCaps hidden">z</span>
+              <span class="unshiftCaps hidden">Z</span>
+              <span class="shiftCaps hidden">z</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyX">
             <span class="ru">
               <span class="unshift visible">ч</span>
               <span class="shift hidden">Ч</span>
-              <span class="shiftCaps hidden">Ч</span>
-              <span class="unshiftCaps hidden">ч</span>
+              <span class="unshiftCaps hidden">Ч</span>
+              <span class="shiftCaps hidden">ч</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">x</span>
               <span class="shift hidden">X</span>
-              <span class="shiftCaps hidden">X</span>
-              <span class="unshiftCaps hidden">x</span>
+              <span class="unshiftCaps hidden">X</span>
+              <span class="shiftCaps hidden">x</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyC">
             <span class="ru">
               <span class="unshift visible">с</span>
               <span class="shift hidden">С</span>
-              <span class="shiftCaps hidden">С</span>
-              <span class="unshiftCaps hidden">с</span>
+              <span class="unshiftCaps hidden">С</span>
+              <span class="shiftCaps hidden">с</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">c</span>
               <span class="shift hidden">C</span>
-              <span class="shiftCaps hidden">C</span>
-              <span class="unshiftCaps hidden">c</span>
+              <span class="unshiftCaps hidden">C</span>
+              <span class="shiftCaps hidden">c</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyV">
             <span class="ru">
               <span class="unshift visible">м</span>
               <span class="shift hidden">М</span>
-              <span class="shiftCaps hidden">М</span>
-              <span class="unshiftCaps hidden">м</span>
+              <span class="unshiftCaps hidden">М</span>
+              <span class="shiftCaps hidden">м</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">v</span>
               <span class="shift hidden">V</span>
-              <span class="shiftCaps hidden">V</span>
-              <span class="unshiftCaps hidden">v</span>
+              <span class="unshiftCaps hidden">V</span>
+              <span class="shiftCaps hidden">v</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyB">
             <span class="ru">
               <span class="unshift visible">и</span>
               <span class="shift hidden">И</span>
-              <span class="shiftCaps hidden">И</span>
-              <span class="unshiftCaps hidden">и</span>
+              <span class="unshiftCaps hidden">И</span>
+              <span class="shiftCaps hidden">и</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">b</span>
               <span class="shift hidden">B</span>
-              <span class="shiftCaps hidden">B</span>
-              <span class="unshiftCaps hidden">b</span>
+              <span class="unshiftCaps hidden">B</span>
+              <span class="shiftCaps hidden">b</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyN">
             <span class="ru">
               <span class="unshift visible">т</span>
               <span class="shift hidden">Т</span>
-              <span class="shiftCaps hidden">Т</span>
-              <span class="unshiftCaps hidden">т</span>
+              <span class="unshiftCaps hidden">Т</span>
+              <span class="shiftCaps hidden">т</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">n</span>
               <span class="shift hidden">N</span>
-              <span class="shiftCaps hidden">N</span>
-              <span class="unshiftCaps hidden">n</span>
+              <span class="unshiftCaps hidden">N</span>
+              <span class="shiftCaps hidden">n</span>
             </span>
           </button>
           <button type="button" class="keyboard__key KeyM">
             <span class="ru">
               <span class="unshift visible">ь</span>
               <span class="shift hidden">Ь</span>
-              <span class="shiftCaps hidden">Ь</span>
-              <span class="unshiftCaps hidden">ь</span>
+              <span class="unshiftCaps hidden">Ь</span>
+              <span class="shiftCaps hidden">ь</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">m</span>
               <span class="shift hidden">M</span>
-              <span class="shiftCaps hidden">M</span>
-              <span class="unshiftCaps hidden">m</span>
+              <span class="unshiftCaps hidden">M</span>
+              <span class="shiftCaps hidden">m</span>
             </span>
           </button>
           <button type="button" class="keyboard__key Comma">
             <span class="ru">
               <span class="unshift visible">б</span>
               <span class="shift hidden">Б</span>
-              <span class="shiftCaps hidden">Б</span>
-              <span class="unshiftCaps hidden">б</span>
+              <span class="unshiftCaps hidden">Б</span>
+              <span class="shiftCaps hidden">б</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">,</span>
@@ -737,8 +737,8 @@ export const markup = `
             <span class="ru">
               <span class="unshift visible">ю</span>
               <span class="shift hidden">Ю</span>
-              <span class="shiftCaps hidden">Ю</span>
-              <span class="unshiftCaps hidden">ю</span>
+              <span class="unshiftCaps hidden">Ю</span>
+              <span class="shiftCaps hidden">ю</span>
             </span>
             <span class="en hidden">
               <span class="unshift visible">.</span>

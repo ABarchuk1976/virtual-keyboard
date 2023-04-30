@@ -8,8 +8,6 @@ body.innerHTML = markup;
 const keyboard = document.querySelector('.keyboard');
 const monitor = document.querySelector('.app__monitor');
 const notType = [
-  'Backspace',
-  'Enter',
   'CapsLock',
   'ShiftLeft',
   'ShiftRight',
@@ -18,7 +16,6 @@ const notType = [
   'MetaLeft',
   'AltLeft',
   'AltRight',
-  'Delete',
 ];
 
 const switchersRu = document.getElementsByClassName('ru');
@@ -33,6 +30,10 @@ const shiftClasses = [unshift, shift, unshiftCaps, shiftCaps];
 const capsLock = document.querySelector('.CapsLock');
 const shiftLeft = document.querySelector('.ShiftLeft');
 const shiftRight = document.querySelector('.ShiftRight');
+let isShift =
+  shiftLeft.classList.contains('active') ||
+  shiftRight.classList.contains('active');
+let isCaps = capsLock.classList.contains('active');
 
 // switching language
 document.addEventListener('onload', () => {
@@ -88,14 +89,14 @@ function switchLang() {
 handleSwitchLang(switchLang, 'ControlLeft', 'KeyL');
 
 // shift and caps
-function changeCaps(shiftClass) {
-  function change(arr, add, remove) {
-    for (let item of arr) {
-      item.classList.remove(remove);
-      item.classList.add(add);
-    }
+function change(arr, add, remove) {
+  for (let item of arr) {
+    item.classList.remove(remove);
+    item.classList.add(add);
   }
+}
 
+function changeCaps(shiftClass) {
   for (let arr of shiftClasses) {
     if (arr[0].classList.contains('visible')) change(arr, 'hidden', 'visible');
   }
@@ -103,46 +104,51 @@ function changeCaps(shiftClass) {
   change(shiftClass, 'visible', 'hidden');
 }
 
+function setCaps() {
+  if (isShift && isCaps) {
+    changeCaps(shiftCaps);
+    return;
+  }
+
+  if (!isShift && isCaps) {
+    changeCaps(unshiftCaps);
+    return;
+  }
+
+  if (isShift && !isCaps) {
+    changeCaps(shift);
+    return;
+  }
+
+  if (!isShift && !isCaps) {
+    changeCaps(unshift);
+  }
+}
+
 window.addEventListener('keydown', evt => {
-  const { code } = evt;
+  const { code, key } = evt;
 
-  let isShift =
-    shiftLeft.classList.contains('active') ||
-    shiftRight.classList.contains('active');
-  let isCaps = capsLock.classList.contains('active');
-
-  console.log(
-    'Massives: ',
-    shift,
-    unshift,
-    shiftCaps,
-    unshiftCaps,
-    shiftClasses
-  );
+  console.log('CODE: ', code);
 
   if (code === 'CapsLock') {
     capsLock.classList.toggle('active');
-    isCaps = !isCaps;
+    isCaps = isCaps ? false : true;
 
-    if (isShift && isCaps) {
-      changeCaps(shiftCaps);
-      return;
-    }
+    console.log('IS: ', isCaps, evt);
 
-    if (!isShift && isCaps) {
-      changeCaps(unshiftCaps);
-      return;
-    }
+    setCaps();
+  }
 
-    if (isShift && !isCaps) {
-      changeCaps(shift);
-      return;
-    }
+  if (key === 'Shift') {
+    code === 'ShiftLeft'
+      ? shiftLeft.classList.add('active')
+      : shiftRight.classList.add('active');
 
-    if (!isShift && !isCaps) {
-      changeCaps(unshift);
-      return;
-    }
+    isShift = true;
+
+    console.log('IS: ', isShift, isCaps);
+
+    setCaps();
   }
 
   const activeKey = document.getElementsByClassName(code)[0];
@@ -151,16 +157,48 @@ window.addEventListener('keydown', evt => {
   if (!notType.includes(code)) {
     const currentSpan = activeKey.getElementsByClassName(langCurrent)[0];
     const span = currentSpan.querySelector('.visible');
+    let text = span.textContent;
 
-    monitor.textContent += span.textContent;
+    if (code === 'Tab') {
+      text = '     ';
+    }
+
+    if (code === 'Backspace') {
+      console.log('Here', monitor.textContent);
+      const position = monitor.getCaret();
+
+      console.log('POSITION: ');
+    }
+
+    if (code === 'Enter') {
+      text = '\n';
+    }
+
+    monitor.textContent += text;
     return;
   }
 });
 
 window.addEventListener('keyup', evt => {
-  const { code } = evt;
-  const activeKey = document.getElementsByClassName(code)[0];
+  const { code, key } = evt;
+
+  if (code === 'CapsLock') {
+    capsLock.classList.toggle('active');
+    isCaps = isCaps ? false : true;
+
+    console.log('IS: ', isCaps, evt);
+
+    setCaps();
+    return;
+  }
+
+  const activeKey = document.querySelector(`.${code}`);
   activeKey.classList.remove('active');
+
+  if (key === 'Shift') {
+    isShift = false;
+    setCaps();
+  }
 });
 
 function handlerKeyboardClick(evt) {
