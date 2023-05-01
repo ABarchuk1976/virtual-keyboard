@@ -133,8 +133,6 @@ function setCaps() {
 
 // function process event by key code
 function handleEventDown(code) {
-  console.log('CODE CLICK: ', code);
-
   const activeKey = document.getElementsByClassName(code)[0];
   activeKey.classList.add('active');
 
