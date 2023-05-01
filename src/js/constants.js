@@ -7,7 +7,7 @@ export const markup = `
       <textarea
         name="monitor"
         id="monitor"
-        cols="30"
+        cols="20"
         rows="10"
         class="app__monitor"
       ></textarea>
@@ -920,8 +920,8 @@ export const markup = `
         </li>
       </ul>
 			<p class="app__description">
-				<span class="ru">Клавиатура создана в Windows ОС. Для переключения - сочетание клавиш ControlLeft + KeyL.</span>
-				<span class="en hidden">Keyboard created at Windows OS. Switch language by ControlLeft + KeyL keys.</span>
+				<span class="ru">Клавиатура создана в Windows ОС. Для переключения нажмите Control Left + Win (Meta Left).</span>
+				<span class="en hidden">Keyboard created at Windows OS. To switch language press Control Left + Win (Meta Left) keys.</span>
 			</p>
     </section>
 `;
