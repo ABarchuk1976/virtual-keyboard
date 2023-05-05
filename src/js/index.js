@@ -1,4 +1,4 @@
-import { markup } from './constants.js';
+import { markup } from './constants';
 
 const body = document.createElement('body');
 body.className = 'body';
@@ -38,14 +38,20 @@ let isShift =
 let isCaps = capsLock.classList.contains('active');
 
 // onload
-document.addEventListener('onload', () => {
+document.addEventListener('DOMContentLoaded', () => {
   try {
     const lang = localStorage.getItem('languageKeyboard');
 
     if (lang) langCurrent = lang;
 
-    localStorage.setItem('languageKeyboard', langCurrent);
-
+    if (langCurrent === 'en') {
+      for (const switcher of switchersEn) {
+        switcher.classList.toggle('hidden');
+      }
+      for (const switcher of switchersRu) {
+        switcher.classList.toggle('hidden');
+      }
+    }
     monitor.textContent = '';
   } catch (error) {
     console.error(error);
@@ -54,13 +60,13 @@ document.addEventListener('onload', () => {
 
 // switching language
 function handleSwitchLang(func, ...codes) {
-  let pressed = new Set();
+  const pressed = new Set();
 
   window.addEventListener('keydown', evt => {
     evt.preventDefault();
     pressed.add(evt.code);
 
-    for (let code of codes) {
+    for (const code of codes) {
       if (!pressed.has(code)) return;
     }
 
@@ -84,10 +90,10 @@ function switchLang() {
     localStorage.setItem('languageKeyboard', 'ru');
   }
 
-  for (let switcher of switchersEn) {
+  for (const switcher of switchersEn) {
     switcher.classList.toggle('hidden');
   }
-  for (let switcher of switchersRu) {
+  for (const switcher of switchersRu) {
     switcher.classList.toggle('hidden');
   }
 }
@@ -96,14 +102,14 @@ handleSwitchLang(switchLang, 'ControlLeft', 'MetaLeft');
 
 // shift and caps
 function change(arr, add, remove) {
-  for (let item of arr) {
+  for (const item of arr) {
     item.classList.remove(remove);
     item.classList.add(add);
   }
 }
 
 function changeCaps(shiftClass) {
-  for (let arr of shiftClasses) {
+  for (const arr of shiftClasses) {
     if (arr[0].classList.contains('visible')) change(arr, 'hidden', 'visible');
   }
 
@@ -137,7 +143,7 @@ function handleEventDown(code) {
   activeKey.classList.add('active');
 
   if (code === 'CapsLock') {
-    isCaps = isCaps ? false : true;
+    isCaps = !isCaps;
     isCaps
       ? capsLock.classList.add('active')
       : capsLock.classList.remove('active');
@@ -158,7 +164,7 @@ function handleEventDown(code) {
   if (code === 'Backspace') {
     const start = monitor.selectionStart;
     const end = monitor.selectionEnd;
-    const length = monitor.textContent.length;
+    const { length } = monitor.textContent;
 
     if (start && length) {
       if (start === 1) {
@@ -178,7 +184,7 @@ function handleEventDown(code) {
   if (code === 'Delete') {
     const start = monitor.selectionStart;
     const end = monitor.selectionEnd;
-    const length = monitor.textContent.length;
+    const { length } = monitor.textContent;
 
     if (start !== length && length) {
       if (start === length - 1) {
@@ -216,7 +222,7 @@ function handleEventDown(code) {
 
 function handleEventKeyUp(code) {
   if (code === 'CapsLock') {
-    isCaps = isCaps ? false : true;
+    isCaps = !isCaps;
 
     isCaps
       ? capsLock.classList.add('active')
